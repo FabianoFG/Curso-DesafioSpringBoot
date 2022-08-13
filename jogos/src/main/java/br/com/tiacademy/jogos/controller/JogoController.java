@@ -27,8 +27,8 @@ public class JogoController {
 	
 	@GetMapping
 	public ResponseEntity<List<Jogo>> listar(){
-		List<Jogo> vendedores = jogoService.listar();
-		return ResponseEntity.ok(vendedores);
+		List<Jogo> jogos = jogoService.listar();
+		return ResponseEntity.ok(jogos);
 	}
 	
 	@GetMapping("/{id}")
